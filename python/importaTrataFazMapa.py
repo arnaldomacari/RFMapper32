@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import griddata
 
-nomeArquivoComDados =  "DadosSinalGPS.csv"
+nomeArquivoComDados =  "/home/ajm/Desktop/Projetos/RFMapper32/python/Data/gps_251006_223355.csv"
 
 
 # =============================
@@ -45,6 +45,15 @@ def load_and_process(input_file):
         reader = csv.reader(infile)
         for row in reader:
             if not row:
+                continue
+            # pular cabeçalho ou linhas com lat/lng não numéricos
+            try:
+                # garante que há pelo menos 3 colunas e que lat/lng são float
+                if len(row) < 3:
+                    continue
+                float(row[1])
+                float(row[2])
+            except Exception:
                 continue
             processed.append(process_line(row))
     return processed
