@@ -1,15 +1,14 @@
 # RFMapper32
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Platform: ESP32](https://img.shields.io/badge/platform-ESP32--C3-blue.svg)](https://www.espressif.com)
-[![Framework: Arduino](https://img.shields.io/badge/Framework-Arduino-8E44AD.svg)](https://www.arduino.cc/)
-[![LoRa](https://img.shields.io/badge/technology-LoRa-red.svg)](https://www.lora-alliance.org)
-[![GPS](https://img.shields.io/badge/GPS-NEO--M8N-orange.svg)](https://www.u-blox.com/en/product/neo-m8-series)
-[![Storage](https://img.shields.io/badge/Storage-microSD%20SPI-blue.svg)](https://www.sdcard.org/)
-[![Display: SSD1306](https://img.shields.io/badge/Display-SSD1306-8E44AD.svg)](https://www.solomon-systech.com/product/ssd1306/)
-[![Post Processing](https://img.shields.io/badge/Post--Processing-Python-green.svg)](https://www.python.org/)
-
+[![Platform: ESP32](https://img.shields.io/badge/Platform-ESP32--C3%20Super%20Mine-blue.svg)](https://www.espressif.com)
+[![Framework: Arduino](https://img.shields.io/badge/Framework-Arduino%20IDE-8E44AD.svg)](https://www.arduino.cc/)
+[![LoRa](https://img.shields.io/badge/Technology-LoRa%20VSPI-red.svg)](https://www.lora-alliance.org)
+[![GPS](https://img.shields.io/badge/GPS-NEO--M8N%20UART--NMEA-orange.svg)](https://www.u-blox.com/en/product/neo-m8-series)
+[![Storage](https://img.shields.io/badge/Storage-MicroSD%20HSPI-blue.svg)](https://www.sdcard.org/)
+[![Display: SSD1306](https://img.shields.io/badge/Display-SSD1306%20I2C-8E44AD.svg)](https://www.solomon-systech.com/product/ssd1306/)
+[![Post Processing](https://img.shields.io/badge/Post--Processing-Python-green.svg)](https://www.python.org/) 
 ![C++ Python](https://img.shields.io/badge/C++%3A%2076.5%25-Python%3A%2023.5%25-orange)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Sistema portátil de mapeamento de RF baseado em ESP32, com posicionamento GNSS e análise de cobertura LoRa e Wi-Fi.
 
