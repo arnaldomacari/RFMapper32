@@ -9,6 +9,7 @@
 [![Display: SSD1306](https://img.shields.io/badge/Display-SSD1306-8E44AD.svg)](https://www.solomon-systech.com/product/ssd1306/)
 [![Post Processing](https://img.shields.io/badge/Post--Processing-Python-green.svg)](https://www.python.org/)
 
+![C++ Python](https://img.shields.io/badge/C++%3A%2076.5%25-Python%3A%2023.5%25-orange)
 
 Sistema portátil de mapeamento de RF baseado em ESP32, com posicionamento GNSS e análise de cobertura LoRa e Wi-Fi.
 
