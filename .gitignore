@@ -109,7 +109,10 @@ wheels/
 Thumbs.db
 *.lnk
 
-# Generated output files
-heatmap_*.png
-*.png
-*.csv
+# Project data and results
+python/Data/
+python/Resultados/
+Data/
+Resultados/
+
+

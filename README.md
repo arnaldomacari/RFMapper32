@@ -27,25 +27,34 @@ O projeto inclui um transmissor LoRa fixo e um receptor móvel que registra GPS,
 - 🖥️ Display OLED para monitoramento local
 - 🧩 Código baseado em ESP32 e Arduino
 
+
 ## 🛠️ Componentes
 
 ### Transmissor
-- ESP32-C3 Super Mine
+- ESP32-C3 Super Mini
+![ESP32-C3-Super-Mini](images/esp32_c3_super_mini.png)<br>
 - Módulo LoRa RA-01
-- Display OLED SSD1306
-- Frequência: 433 MHz
-- Configuração de LoRa: SF8
-
+![LORA](images/Lora-RA-01.png)<br>
+- Display SSD1306 OLED de 0,96 polegadas, 128x64 pixels, comunicação I2C
+![LCD](images/ssd1306.png)<br>
+- Esquema eletrônico
+![trasmissor schematic](images/Transmissor-schematic.png)<br>
+- Montagem em protoboard (as cores dos fios correspondem ao esquema acima)
 ![Transmissor](images/transmissor.jpeg)
+<br>
 
 ### Receptor móvel
-- DOIT ESP32 DevKit v1
+- DOIT ESP32 DevKit V1<br>
+![alt text](images/DOIT-ESP32-DEVKIT-V1.png)
 - Módulo LoRa RA-01
+![LORA](images/Lora-RA-01.png)<br>
 - GPS NEO M8N
 - Módulo SD card
-- Display OLED SSD1306
-- Scanning Wi-Fi passivo
-
+- Display SSD1306 OLED de 0,96 polegadas, 128x64 pixels, comunicação I2C
+![LCD](images/ssd1306.png)<br>
+- Esquema eletrônico
+![receptor schematic](images/Receptor-schematic.png)<br>
+- Montagem em protoboard (as cores dos fios correspondem ao esquema acima)
 ![Receptor](images/receptor.png)
 
 ## 📁 Estrutura do repositório

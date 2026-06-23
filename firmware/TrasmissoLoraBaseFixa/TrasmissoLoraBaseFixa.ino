@@ -19,7 +19,6 @@
 #define SCREEN_HEIGHT 64
 #define OLED_RESET -1
 #define OLED_ADDR 0x3C
-
 #define OLED_SDA 8
 #define OLED_SCL 9
 
@@ -77,6 +76,8 @@ void setup() {
   }
 
   LoRa.setSpreadingFactor(8);
+  LoRa.setTxPower(20);
+
 
   Serial.println("LoRa init succeeded.");
 
@@ -92,7 +93,7 @@ void setup() {
 
 void loop() {
   if (millis() - lastSendTime > interval) {
-    String message = "Olora Mundo! ";
+    String message = "LoRa: ";
     message += msgCount;
 
     sendMessage(message);

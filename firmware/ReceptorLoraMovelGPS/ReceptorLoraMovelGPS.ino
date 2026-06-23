@@ -29,7 +29,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 // --------------------- LoRa (VSPI) ---------------------
 #define LORA_CS_PIN 5
 #define LORA_RST_PIN 32
-#define LORA_IRQ_PIN 4
+#define LORA_IRQ_PIN 4  // IO0
 
 // --------------------- SD Card (HSPI) ---------------------
 #define SD_CS_PIN 15
@@ -199,6 +199,7 @@ void saveDataToSD() {
 // --------------------- Função para escanear Wi-Fi passivamente ---------------------
 void scanWiFiPassive() {
   // Desativa Wi-Fi se estiver ligado
+  digitalWrite(LED_BUILTIN, HIGH);
   WiFi.mode(WIFI_STA);
   WiFi.disconnect();
   delay(100);
@@ -220,7 +221,7 @@ void scanWiFiPassive() {
     }
   }
   WiFi.scanDelete();  // Libera memória
-  digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 
